@@ -16,8 +16,10 @@ int non_space_char(char c){
   else{
     printf("This is not a white space char.\n");
     return 1;
-  }
-  main(){
-    printf("Please enter a char for testing.\n");
-    non_space_char(getchar());
+
+}
+}
+main(){
+  printf("Please enter a char for testing.\n");
+  non_space_char(getchar());
   }
