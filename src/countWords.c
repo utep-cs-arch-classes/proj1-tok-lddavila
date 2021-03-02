@@ -4,7 +4,7 @@
 int count_words(char *str){
   int counter = 0; 
   printf("The first symbol of the string before going into the loop: %c\n", *str); 
-  while(*str != 10) {
+  while(*str != '/0') {
     
     str = word_start(str);
     printf("The symbol the pointer points to after calling word_start(str): %c\n", *str);

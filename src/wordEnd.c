@@ -16,4 +16,5 @@ main(){
   ptr = word_end(str);
   printf("What the ptr points to after we call the function: %d\n", *ptr); 
 
-}/*
+}
+*/
