@@ -14,7 +14,8 @@ char *copy_str(char *src, short len){
       counter -=1;      
     }
     ptrToBeReturned++;
-    *ptrToBeReturned =(char) '/0'; 
+    *ptrToBeReturned =(char) '/0';
+    printf("What the pointer contains %d \n", *ptrToBeReturned);
     while(counter < len+1){
       ptrToBeReturned-=1;
       counter++;
