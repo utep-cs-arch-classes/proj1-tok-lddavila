@@ -19,6 +19,5 @@ char *copy_str(char *src, short len){
       ptrToBeReturned-=1;
       counter++;
       }
-    printf("Foolish Nonsense %c\n", *ptrToBeReturned);
-    return ptrToBeReturned;
+   return ptrToBeReturned;
 }
