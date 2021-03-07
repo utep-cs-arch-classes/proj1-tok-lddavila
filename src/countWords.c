@@ -3,14 +3,17 @@
 #include <string.h>
 int count_words(char *str){
   int counter = 0; 
-  printf("The first symbol of the string before going into the loop: %c\n", *str); 
-  while(*str != '/0') {
-    
+  /* printf("The first symbol of the string before going into the loop: %c\n", *str);*/ 
+  while(*str != '\0') {
+    if (*str == '\0')
+      break; 
     str = word_start(str);
-    printf("The symbol the pointer points to after calling word_start(str): %c\n", *str);
+    /* printf("The symbol the pointer points to after calling word_start(str): %c\n", *str); */
+    if(*str == '\0')
+      break;
     counter++;
     str = word_end(str);
-    printf("The symbol the pointer points to after calling word_end(str): %d\n", *str);
+    /* printf("The symbol the pointer points to after calling word_end(str): %d\n", *str);*/
   }
   return counter; 
 }

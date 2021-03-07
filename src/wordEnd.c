@@ -3,7 +3,11 @@
 char *word_end(char *str){
   while(space_char(*str) == 0)
     ++str;
-  
+  if(space_char(*str) == 2){
+    char a = '\0';
+    char *nullPtr = &a;
+    return nullPtr;
+  }
   
   return str; 
 }
