@@ -8,7 +8,7 @@ void main(){
   printf("Results for count words: %d\n", count_words(str));
   */ 
   /*TEST FOR COPY_STR(*STR, SHORT LEN)
- char *ptr = copy_str(str, 7);
+ char *ptr = copy_str(str, 5);
   while (*ptr != '\0'){
     printf("%c", *ptr);
     ptr++;
@@ -16,5 +16,13 @@ void main(){
       break;
   }
   printf("\n");
-  */
-}
+  /*
+
+  /*TEST FOR TOKENIZER.C*/
+
+  char **ptr = tokenize(str);
+  
+  print_tokens(ptr);   
+   
+ }
+

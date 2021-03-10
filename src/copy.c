@@ -5,7 +5,9 @@
 char *copy_str(char *src, short len){
 
     char *ptrToBeReturned;
-    ptrToBeReturned = (char *) malloc((int)len+1);
+    char *ptr; 
+    ptrToBeReturned = (char *)malloc((int)len+1);
+    ptr = ptrToBeReturned;
     int counter = (int)len;
     while(counter >0){
       *ptrToBeReturned = *src;
@@ -13,12 +15,7 @@ char *copy_str(char *src, short len){
       src++;
       counter -=1;      
     }
-    ptrToBeReturned++;
-    *ptrToBeReturned =(char) '/0';
-    printf("What the pointer contains %d \n", *ptrToBeReturned);
-    while(counter < len+1){
-      ptrToBeReturned-=1;
-      counter++;
-      }
-   return ptrToBeReturned;
+    *ptrToBeReturned =(char) '\0';
+    
+   return ptr;
 }
