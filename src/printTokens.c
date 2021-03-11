@@ -4,8 +4,8 @@
 
 void print_tokens(char **toks){         
   
-  while(*toks !='\0'){
-    if(*toks == '\0')
+  while(**toks !='\0'){
+    if(**toks == '\0')
       break;
     char *tmpPtr = *toks;
     while (*tmpPtr != '\0'){
@@ -14,7 +14,7 @@ void print_tokens(char **toks){
       printf("%c", *tmpPtr);
       tmpPtr++;
     }
-    printf(" ");
+    printf("\n");
     toks++;
   }
   printf("\n");
