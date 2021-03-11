@@ -40,8 +40,10 @@ char **tokenize(char* str){
     if(*str == '\0')
       break;
     str = word_start(str);
-}
-*ptrToBeReturned = '\0';/*
+  }
+  char a = '\0';
+  char *zeroPointer = &a;
+  *ptrToBeReturned = zeroPointer;/*
 printf("Theoretically this should be H: Acutally: %c,\n", **ptr);   
 			*/
 return ptr;
