@@ -3,7 +3,7 @@
 #include "tokenizer.h"
 
 char **tokenize(char* str){
-  char **ptrToBeReturned = (char**) malloc(count_words(str));
+  char **ptrToBeReturned = (char**) malloc(count_words(str)*sizeof(char *));
   /* printf("This is how memory spaces were allocated in memory by malloc: %d\n", count_words(str)+1);*/
   char **ptr = ptrToBeReturned;
   while (*str != '\0'){
