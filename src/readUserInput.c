@@ -21,8 +21,11 @@ void main(){
   /*TEST FOR TOKENIZER.C*/
 
   char **ptr = tokenize(str);
-  
-  print_tokens(ptr);   
-   
+  printf("before free \n");
+  print_tokens(ptr);
+  /*  free_tokens(ptr);
+  printf("after free\n"); 
+  print_tokens(ptr);
+  */
  }
 
